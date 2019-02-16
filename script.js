@@ -1,21 +1,3 @@
-document.getElementById('BtnDonate').addEventListener('click', function(){
-  //Code in here executes when the user clicks the "Donate" button.
-  console.log("There are" + " " + totalSpeeches + " " + "speeches on the page.");
-});
-
-document.getElementById('BtnChurchill').addEventListener('click', function(){
-  //Code in here executes when the user clicks the "Churchill" button.
-  console.log("This speech was written by" + " " + greatSpeeches[1].authorName + " " + "in" + " " + greatSpeeches[1].speechYear + "." + " " + "It is" + " " + churchillBce + " " + "that this year is B.C.E.");
-});
-
-document.getElementById('BtnGhandi').addEventListener('click', function(){
-  //Code in here executes when the user clicks the "Ghandi" button.
-});
-
-document.getElementById('BtnDemosthenes').addEventListener('click', function(){
-  //Code in here executes when the user clicks the "Demosthenes" button.
-});
-
 var greatSpeeches = [
   {
     authorName: "Demosthenes",
@@ -48,3 +30,23 @@ var churchillBce = (greatSpeeches[1].yearBce === greatSpeeches[1].historicalSpee
 var ghandiBce = (greatSpeeches[2].yearBce === greatSpeeches[2].historicalSpeech);
 
 console.log("Ghandi's speech and Churchill's speech are" + " " + yearDifference + " " + "years apart.");
+
+document.getElementById('BtnDonate').addEventListener('click', function(){
+  //Code in here executes when the user clicks the "Donate" button.
+  console.log("There are" + " " + totalSpeeches + " " + "speeches on the page.");
+});
+
+document.getElementById('BtnChurchill').addEventListener('click', function(){
+  //Code in here executes when the user clicks the "Churchill" button.
+  console.log("This speech was written by" + " " + greatSpeeches[1].authorName + " " + "in" + " " + greatSpeeches[1].speechYear + "." + " " + "It is" + " " + churchillBce + " " + "that this year is B.C.E.");
+});
+
+document.getElementById('BtnGhandi').addEventListener('click', function(){
+  //Code in here executes when the user clicks the "Ghandi" button.
+  console.log("This speech was written by" + " " + greatSpeeches[2].authorName + " " + "in" + " " + greatSpeeches[2].speechYear + "." + " " + "It is" + " " + ghandiBce + " " + "that this year is B.C.E.");
+});
+
+document.getElementById('BtnDemosthenes').addEventListener('click', function(){
+  //Code in here executes when the user clicks the "Demosthenes" button.
+  console.log("This speech was written by" + " " + greatSpeeches[0].authorName + " " + "in" + " " + greatSpeeches[0].speechYear + "." + " " + "It is" + " " + demosthenesBce + " " + "that this year is B.C.E.");
+});
